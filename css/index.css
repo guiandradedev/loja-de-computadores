@@ -75,6 +75,9 @@ header nav ul li a:hover {
     border-bottom: 3px solid #4AB4DE;
     transition: 500ms;
 }
+header nav ul li .navAHover:hover {
+    border-bottom: 0;
+}
 header nav ul li .boxLogin:hover {
     background-color: #e2e2e2;
     color: #0BB68C;
@@ -88,7 +91,7 @@ header nav ul li .boxCarrinho:hover {
 }
 #container_left_banner {
     float: left;
-    width: 570px;
+    width: 38%;
     height: 400px;
     box-sizing: border-box;
 }
@@ -117,12 +120,11 @@ header nav ul li .boxCarrinho:hover {
 }
 .banner {
     float: right;   
-    width: 760px;
-    box-sizing: border-box;
+    width: 57%;
 }
 .banner img {
-    width: 760px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
 }
 .clear {
     clear: both;
@@ -177,8 +179,9 @@ header nav ul li .boxCarrinho:hover {
     display: inline-block;
     padding: 50px 10px;
     text-align: center;
-    width: 200px;
-    margin: 0 20px;
+    width: 33.333%;
+    max-width: 200px;
+    margin: 0 30px;
 }
 .qualidadeSingle p {
     font-size: 1.2em;
@@ -299,4 +302,254 @@ footer img {
     color: #d2d2d2;
     font-family: 'Montserrat', sans-serif;
     text-align: right;
+}
+@media screen and (max-width: 1024px ) {
+    .container_header {
+        width: 100%;
+        padding: 1% 2%;
+    }
+    .container_banner {
+        width: 90%;
+        height: auto;
+        padding: 15% 0px 0 0;
+    }
+    #container_left_banner {
+        width: 50%;
+    }
+    .container_banner .banner {
+        width: 50%;
+    }
+    .container_banner h1 {
+        font-size: 3em;
+    }
+
+    .separacao {
+        padding: 50px 0;
+    }
+    .separacao:nth-child(2) {
+        padding: 65px 0;
+    }
+    .qualidades_container {
+        width: 90%;
+    }
+    .qualidades_container h1 {
+        margin-bottom: 10px;
+    }
+    .qualidade {
+        padding: 10px 0 0 0;
+    }
+    .qualidadeSingle {
+        display: inline-block;
+        padding:20px 5px;
+        text-align: center;
+        width: 33.333%;
+        max-width: 200px;
+        margin: 0 20px;
+    }
+    .qualidadeSingle p {
+        font-size: 1.3em;
+    }
+    
+    .maisProdutos {
+        height: auto;
+    }
+    .maisProdutos p {
+        padding: 10px 0 0px 0;
+    }
+    .maisProdutos button {
+        width: 25%; 
+        height: 40px;
+        margin: 0 0 20px 0;
+    }
+    
+    .produtosPremiados {
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0 0 0;
+    }
+
+}
+@media screen and (max-width: 768px){
+    header nav, header .logo {
+        float: none;
+    }
+    header {
+        height: auto;
+        margin-bottom: 1%;
+        position: static;
+        text-align: center;
+    }
+    header .logo {
+        margin-bottom: 2%;
+    }
+    header nav ul li{
+        display: block;
+        margin: 2% 0;
+    }
+    header nav ul li .boxLogin {
+        width: 120px;
+        text-align: center;
+        display: inline-block;
+        height: 60px;
+    }
+    header nav ul li .boxCarrinho {
+        display: inline-block;
+        width: 160px;
+        text-align: center;
+        height: 60px;
+    }
+    .container_banner {
+        padding: 0px;
+        background: none;
+        height: auto;
+    }
+    #container_left_banner {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        height: auto;
+    }
+    .container_banner h1 {
+        background: none;
+        text-align: center;
+        width: 100%;
+    }
+    .container_banner button {
+        width: 50%;
+        text-align: center;
+        margin: 10px 24%;
+    }
+    .banner {
+        width: 100%;
+        min-width: 250px;
+        float: none;
+        margin: 20px auto;
+    }
+    .banner img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 360px) {
+    header nav ul li{
+        display: block;
+        margin: 10px 0;
+    }
+    .container_banner {
+        padding: 10px;
+        background: none;
+        height: auto;
+    }
+    #container_left_banner {
+        width: 100%;
+        background: none;
+        margin: 0;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+    }
+    .container_banner h1 {
+        text-shadow: 2px 3px 2px black;
+        line-height: 50px;
+        font-size: 2.5em;
+    }
+    .container_banner button {
+        margin: 5px 0;
+    }
+    .banner {
+        margin: 20px 0;
+    }
+    .separacao {
+        padding: 35px;
+    }
+    .separacao h1 {
+        font-size: 35px;
+    }
+    .separacao p {
+        font-size: 20px;
+        width: 100%;
+        margin: 5px 0;
+    }
+    .separacao:nth-child(2) {
+        padding: 60px 0;
+    }
+    .qualidades_container {
+        width: 100%;
+    }
+    .qualidades_container h1 {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 2.1em;
+        padding: 20px 0;
+    }
+    .qualidade {
+        padding: 10px 0 0 0;
+    }
+    .qualidadeSingle {
+        padding:15px 5px;
+        width: 100%;
+        margin: 0 20px;
+    }
+    .qualidadeSingle p {
+        font-size: 1.3em;
+    }
+    .produtosPremiados {
+        width: 100%;
+        padding: 50px 0 0 0;
+    }
+    .produto {
+        width: 80%;
+        margin: 0 0px 60px 0;
+        height: auto;
+    }
+    .produto:last-of-type {
+        margin: 0;
+    }
+    .produto img {
+        margin-top: 10px;
+        width: 90%;
+        height: 90%;
+        border: 0;
+    }
+    .produto h1 {
+        margin: 5px 0 0 0;
+    }
+    .produto h1:nth-of-type(2) {
+        margin: 8px 0 0 0;
+    }
+
+    .maisProdutos {
+        margin: 20px 0;
+    }
+    .maisProdutos p {
+        font-size: 1.6em;
+        width: 80%;
+        margin: 0 auto 10px auto;
+    }
+    .maisProdutos button {
+        width: 50%; 
+        height: 50px;
+        padding-bottom: 2px;
+        margin: 0 0 20px 0;
+    }
+
+    footer {
+        height: auto;
+        text-align: center;
+        padding: 0;
+    }
+    .sociais, .footerContainer {
+        float: none;
+        text-align: center;
+    }
+    .sociais img{
+        margin: 7px 0 0px 0;
+    }
+    .footerContainer {
+        padding: 0;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
