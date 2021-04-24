@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #283D5A;
+    }
+
+/*header*/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #283D5A;
+    position: fixed;
+}
+header nav {
+    float: right;
+    margin: 1% 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #d2d2d2;
+    box-sizing: border-box;
+}
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #e2e2e2;
+}
+header .logo{
+    float: left;
+}
+header nav ul li .boxLogin {
+    width: 120px;
+    text-align: center;
+    background-color: #0BB68C;
+    height: 60px;
+    padding: 9px;
+    border-radius: 50px;
+}
+header nav ul li .boxCarrinho {
+    width: 160px;
+    text-align: center;
+    padding: 9px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid #0BB68C;
+    color: #0BB68C;
+}
+header nav ul li a:hover {
+    color: #4AB4DE;
+    border-bottom: 3px solid #4AB4DE;
+    transition: 500ms;
+}
+header nav ul li .boxLogin:hover {
+    background-color: #e2e2e2;
+    color: #0BB68C;
+    transition: 500ms;
+}
+header nav ul li .boxCarrinho:hover {
+    background-color: #e2e2e2;
+    transition: 500ms;
+    color: #283D5A;
+    border: 1px solid #e2e2e2;
+}
+.container_header {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 7px;
+    }
+/*container*/
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 90px 0 0 0;
+}
+
+.produtos {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+    background-color: rgba(50, 79, 119, 0.4);
+    border-radius: 60px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.produtos h1:first-child {
+    color: #ececec;
+    font-size: 3em;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 20px;
+}
+.produto {
+    display: inline-block;
+    width: 400px;
+    margin: 0 50px 60px 0;
+    height: 680px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #dbdbdb;
+    box-shadow: 1px 6px 15px black;
+}
+.produto img {
+    width: 400px;
+    height: 400px;
+    margin-left: -1px;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.produto p {
+    text-align: justify;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.1em;
+}
+.produto h1 {
+    margin: 10px 0 0 0;
+}
+.produto button {
+    width: 170px;
+    font-size: 1.2em;
+    height: 50px;
+    padding: 5px;
+    border: 0;
+    outline: none;
+    margin: 10px 0 20px 0;
+    background-color: #3B8AC3;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.produto button:hover {
+    background-color: #4AB4DE;
+    transition: 300ms;
+}
+
+/*footer*/
+footer {
+    width: 100%;
+    height: 73px;
+    text-align: center;
+    background-color: #111a27;
+    padding: 7px;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 7px 0;
+}
+.sociais {
+    float: left;
+}
+.sociais img:hover {
+    width: 45px;
+    height: 45px;
+    transition: 300ms;
+}
+.footerContainer {
+    float: right;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 2px 0;
+    color: #d2d2d2;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}

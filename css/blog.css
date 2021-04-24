@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #283D5A;
+}
+.clear {
+    clear: both;
+}
+input {
+    outline: none;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #283D5A;
+    position: fixed;
+}
+header nav {
+    float: right;
+    margin: 1% 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #d2d2d2;
+    box-sizing: border-box;
+}
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #e2e2e2;
+}
+header .logo{
+    float: left;
+}
+header nav ul li .boxLogin {
+    width: 120px;
+    text-align: center;
+    background-color: #0BB68C;
+    height: 60px;
+    padding: 9px;
+    border-radius: 50px;
+}
+header nav ul li .boxCarrinho {
+    width: 160px;
+    text-align: center;
+    padding: 9px;
+    height: 60px;
+    border-radius: 50px;
+    border: 2px solid #0BB68C;
+    color: #0BB68C;
+}
+header nav ul li a:hover {
+    color: #4AB4DE;
+    border-bottom: 3px solid #4AB4DE;
+    transition: 500ms;
+}
+header nav ul li .boxLogin:hover {
+    background-color: #e2e2e2;
+    color: #0BB68C;
+    transition: 500ms;
+}
+header nav ul li .boxCarrinho:hover {
+    background-color: #e2e2e2;
+    transition: 500ms;
+    color: #283D5A;
+    border: 1px solid #e2e2e2;
+}
+.container_header {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 7px;
+    }
+/*container*/
+.conteudo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 95px 0 0 0;
+    background-color: #283D5A;
+}
+.container {
+    width: 68%;
+    height: 1670px;
+    background-color: #d2d2d2;
+    margin: 0 auto;
+}
+.left {
+    float: left;
+    width: 30%;
+    height: 100%;
+    padding: 50px 35px;
+    background-color: #1f3d69;
+    border: 1px solid black;
+    border-right: 0;
+}
+.right {
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding: 50px 50px;
+    background-color: #1f3d69;
+    border: 1px solid black;
+}
+.left h1 {
+    font-size: 2.5em;
+    color: #e2e2e2;
+}
+.leftInicio, .categorias, .postsRecentes {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(33, 112, 143);
+}
+.leftInicio {
+    background-color: rgb(33, 112, 143);
+    height: 130px;
+}
+.leftInicio input {
+    width: 75%;
+    height: 60px;
+    font-size: 1.5em;
+    font-family: 'PT Serif', serif;
+    color: #e2e2e2;
+    padding: 20px;
+}
+.postsRecentes {
+    margin: 30px auto;
+}
+.postsRecentes ul, .categorias ul {
+    list-style-position: inside;
+    text-align: left;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.postsRecentes ul li, .categorias ul li {
+    font-size: 1.2em;
+    line-height: 25px;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+.postsRecentes ul li a, .categorias ul li a {
+    color: #e2e2e2;
+    font-size: 1em;
+    letter-spacing: 0.8px;
+}
+.left ul li a {
+    text-decoration: none;
+}
+.post {
+    width: 100%;
+    background-color: rgba(15, 15, 15, 0.767);
+    margin: 0 0 40px 0;
+}
+.post .postLeft {
+    float: left;
+    height: 100%;
+    width: 30%;
+}
+.post img {
+    width: 241px;
+    height: 170px;
+}
+.post .postRight {
+    float: right;
+    width: 70%;
+}
+.postRight h1 {
+    text-align: center;
+    padding: 5px 0;
+    width: 95%;
+    float: right;
+    margin: 0 20px;
+    height: 55px;
+    font-family: 'PT Serif', serif;
+    font-weight: 800;
+    color: #e2e2e2;
+}
+.postRight p {
+    text-align: justify;
+    width: 90%;
+    padding: 0 20px;
+    margin: 0 20px;
+    float: right;
+    z-index: 0;
+    font-size: 1.1em;
+    overflow-y: hidden;
+    letter-spacing: 1px;
+    height: 110px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #272727bd;
+    color: #e2e2e2;
+}
+.post .aMais {
+    width: 100%;
+    height: 60px;
+    margin-top: -4px;
+    background-color: #324f77;
+}
+.post .aMais h1 {
+    padding: 10px 0;
+    color: #e2e2e2;
+    font-family: 'PT Serif', serif;
+    font-size: 1.8em;
+}
+.post .aMais h1:hover {
+    color: white;
+}
+.btn {
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+}
+.btn button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.5em;
+    float: right;
+    margin: 15px 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn button:hover {
+    border-bottom: 3px solid white;
+}
+/*footer*/
+footer {
+    width: 100%;
+    height: 73px;
+    text-align: center;
+    background-color: #111a27;
+    padding: 7px;
+}
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 7px 0;
+}
+.sociais {
+    float: left;
+}
+.sociais img:hover {
+    width: 45px;
+    height: 45px;
+    transition: 300ms;
+}
+.footerContainer {
+    float: right;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: 2px 0;
+    color: #d2d2d2;
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+}
